@@ -1,0 +1,26 @@
+h1{
+  text-align: center;
+  color: white;
+}
+td{
+  height: 30px;
+}
+table{
+  margin: auto;
+  background: red;
+  color: white;
+}
+th{
+  height: 50px;
+
+}
+body{
+  background: #47535E;
+}
+.lead{
+  text-align: center;
+  margin-top: 50px;
+}
+.btn{
+  margin-left: 20px;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends 'index.html' %}
+{% load static %}
+    {% block content %}
+    <h1>{{title}}</h1>
+    {% if jobs %}
+    <table border="2">
+      <tr>
+        <th>Date</th>
+        <th>Company</th>
+        <th>Title</th>
+        <th>Eligibility</th>
+        <th>Address</th>
+        <th>Email</th>
+        <th>Phone Number</th>
+      </tr>
+      {% for job in jobs %}
+      <tr>
+        <td>{{job.date}}</td>
+        <td>{{job.company}}</td>
+        <td>{{job.title}}</td>
+        <td>{{job.eligibility}}</td>
+        <td>{{job.address}}</td>
+        <td>{{job.email}}</td>
+        <td>{{job.phonenumber}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+    {% else %}
+    <h2>No record found </h2>
+    {% endif %}
+    {% endblock content%}
